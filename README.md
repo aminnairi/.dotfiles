@@ -8,7 +8,10 @@
 ## Installation 
 
 ```bash
+# Clone the repository
 git clone https://github.com/aminnairi/.dotfiles ~/.dotfiles
+# Change directory in the cloned repository
 cd ~/.dotfiles
-stow *
+# Generate the dotfiles
+stow */
 ```
