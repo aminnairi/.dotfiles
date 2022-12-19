@@ -2,6 +2,7 @@
 
 ## Requirements
 
+- [Archlinux](https://archlinux.org/)
 - [Git](https://git-scm.com/)
 - [GNU/Stow](https://www.gnu.org/software/stow/)
 
