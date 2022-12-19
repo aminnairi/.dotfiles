@@ -24,6 +24,7 @@ call plug#begin()
   Plug 'ryanoasis/vim-devicons'
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'jremmen/vim-ripgrep'
+  Plug 'vimwiki/vimwiki'
 call plug#end()
 
 " Vim configuration
