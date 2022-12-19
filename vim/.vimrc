@@ -1,3 +1,32 @@
+" Checking if NVIM or VIM is used
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+
+" Automatic installation of Vim Plug
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Plugins to install
+call plug#begin()
+  Plug 'dense-analysis/ale'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+  Plug 'arcticicestudio/nord-vim'
+  Plug 'vim-airline/vim-airline'
+  Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-surround'
+  Plug 'dag/vim-fish'
+  Plug 'styled-components/vim-styled-components'
+  Plug 'elmcast/elm-vim'
+  Plug 'preservim/nerdtree'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'peitalin/vim-jsx-typescript'
+  Plug 'jremmen/vim-ripgrep'
+call plug#end()
+
+" Vim configuration
 filetype plugin indent on
 syntax on
 set autoindent
