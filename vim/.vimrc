@@ -96,7 +96,9 @@ nnoremap <leader>afr :ALEFileRename<CR>
 nnoremap <C-p> :FZF<CR>
 
 " nord-vim
-colorscheme nord
+if isdirectory(glob(data_dir . '/plugged/nord-vim'))
+  colorscheme nord
+endif
 
 " nerdtree
 nnoremap <leader>n :NERDTreeFocus<CR>
