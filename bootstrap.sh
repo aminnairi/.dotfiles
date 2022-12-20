@@ -23,7 +23,7 @@ git clone https://aur.archlinux.org/yay.git ~/Documents/git/aur.archlinux.org/ya
 cd ~/Documents/git/aur.archlinux.org/yay
 
 # Installing yay
-makepkg -sri
+makepkg -sri --noconfirm --needed
 
 # Install the AUR packages
 yay -Syyu --noconfirm --needed \
