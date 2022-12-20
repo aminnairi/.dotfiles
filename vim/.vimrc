@@ -25,6 +25,7 @@ call plug#begin()
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'jremmen/vim-ripgrep'
   Plug 'vimwiki/vimwiki'
+  Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Vim configuration
