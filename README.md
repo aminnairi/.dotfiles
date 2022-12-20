@@ -8,6 +8,10 @@ My personnal dotfiles
 - [Git](https://git-scm.com/)
 - [GNU/Stow](https://www.gnu.org/software/stow/)
 
+## Disclaimer
+
+This has been tested under Archlinux with Gnome. This may not work properly on other distributions and/or desktop environments.
+
 ## Setup
 
 ```bash
@@ -36,3 +40,19 @@ cd ~/.dotfiles
 # Install the configuration
 sh bootstrap.sh
 ```
+
+## Code of conduct
+
+See [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md).
+
+## Contributing
+
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
+
+## License
+
+See [`LICENSE`](./LICENSE).
+
+## Security
+
+See [`SECURITY.md`](./SECURITY.md).
