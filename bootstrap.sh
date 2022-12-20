@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Did you read the documentation?
+# https://github.com/aminnairi/.dotfiles#readme
+
 # Installing the necessary dependencies
 sudo pacman -Syyu --noconfirm --needed \
   stow \
