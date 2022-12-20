@@ -17,7 +17,7 @@ sudo pacman -Syyu --noconfirm --needed \
   fzf
 
 # changing the current shell to fish
-sudo chsh --shell /bin/fish amin
+sudo chsh --shell $(which fish) $USER
 
 # Cloning yay
 git clone https://aur.archlinux.org/yay.git ~/Documents/git/aur.archlinux.org/yay

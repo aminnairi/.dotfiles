@@ -16,7 +16,7 @@ This has been tested under Archlinux with Gnome. This may not work properly on o
 
 ```bash
 # Install sudo
-pacman -Syyu --noconfirm --needed sudo
+pacman -Syyu --noconfirm --needed sudo fakeroot which
 
 # Setup sudo
 visudo
