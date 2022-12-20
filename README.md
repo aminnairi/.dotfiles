@@ -16,16 +16,16 @@ This has been tested under Archlinux with Gnome. This may not work properly on o
 
 ```bash
 # Install sudo
-pacman -Syyu --noconfirm --needed sudo fakeroot which
+pacman -Syyu --noconfirm --needed sudo fakeroot which binutils gvim git make gcc xorg-xset
 
-# Setup sudo
-visudo
+# Setup sudo for the %sudo group
+EDITOR=vim visudo
 
 # Add the sudo group
 groupadd --force sudo
 
 # Add the user to the sudoers
-gpasswd --add amin sudo
+gpasswd --add $USER sudo
 ```
 
 ## Installation 
