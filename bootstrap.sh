@@ -42,3 +42,6 @@ cd ~/.dotfiles
 
 # Stow all configurations
 stow */
+
+# Go into the Fish shell
+exec fish
