@@ -43,14 +43,9 @@ cd ~
 ## Installation 
 
 ```bash
-# Clone the repository
-git clone https://github.com/aminnairi/.dotfiles ~/.dotfiles
-
-# Change directory in the cloned repository
-cd ~/.dotfiles
-
-# Install the configuration
-sh bootstrap.sh
+git clone https://github.com/aminnairi/.dotfiles ~/.dotfiles \
+  && cd ~/.dotfiles \
+  && sh bootstrap.sh
 ```
 
 ## Code of conduct
