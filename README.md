@@ -1,5 +1,7 @@
 # .dotfiles
 
+My personnal dotfiles
+
 ## Requirements
 
 - [Archlinux](https://archlinux.org/)
