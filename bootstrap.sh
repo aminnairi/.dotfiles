@@ -20,13 +20,16 @@ sudo pacman -Syyu --noconfirm --needed \
 sudo chsh --shell $(which fish) $USER
 
 # Cloning yay
-git clone https://aur.archlinux.org/yay.git ~/Documents/git/aur.archlinux.org/yay
+git clone https://aur.archlinux.org/yay.git ~/git/aur.archlinux.org/yay
 
 # Changing directory
-cd ~/Documents/git/aur.archlinux.org/yay
+cd ~/git/aur.archlinux.org/yay
 
 # Installing yay
 makepkg -sri --noconfirm --needed
+
+# Removing the downloaded folder
+rm -rf ~/git/aur.archlinux.org/yay
 
 # Install the AUR packages
 yay -Syyu --noconfirm --needed \
