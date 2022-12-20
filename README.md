@@ -22,10 +22,22 @@ pacman -Syyu --noconfirm --needed sudo fakeroot which binutils gvim git make gcc
 EDITOR=vim visudo
 
 # Add the sudo group
-groupadd --force sudo
+sudo groupadd --force sudo
+
+# Add a new user
+useradd -m user
+
+# Add a password for this new user
+passwd user
 
 # Add the user to the sudoers
-gpasswd --add $USER sudo
+sudo gpasswd --add $USER sudo
+
+# Substitute to the created user
+su user
+
+# Change the current directory
+cd ~
 ```
 
 ## Installation 
