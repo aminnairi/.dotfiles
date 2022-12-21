@@ -31,7 +31,7 @@ useradd -m user
 passwd user
 
 # Add the user to the sudoers
-sudo gpasswd --add $USER sudo
+sudo gpasswd --add user sudo
 
 # Substitute to the created user
 su user
