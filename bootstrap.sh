@@ -14,6 +14,7 @@ sudo pacman -Syyu --noconfirm --needed \
   noto-fonts \
   noto-fonts-emoji \
   fzf \
+  htmlhint \
   && sudo chsh --shell $(which fish) $USER \
   && git clone https://aur.archlinux.org/yay.git ~/git/aur.archlinux.org/yay \
   && cd ~/git/aur.archlinux.org/yay \
