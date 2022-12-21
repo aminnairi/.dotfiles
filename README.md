@@ -2,6 +2,8 @@
 
 My personnal dotfiles
 
+![image](https://user-images.githubusercontent.com/18418459/209004913-21669bfc-8855-46cc-bc6c-d6c4c5ef24e6.png)
+
 ## Requirements
 
 - [Archlinux](https://archlinux.org/)
