@@ -9,6 +9,12 @@ then
   exit 1
 fi
 
+if "$(grep ID=arch /etc/os-release)" > /dev/null
+then
+  echo "This script should be run in an Arch distribution"
+  exit 2
+fi
+
 sudo pacman -Syyu --noconfirm --needed \
   stow \
   alacritty \
@@ -24,6 +30,8 @@ sudo pacman -Syyu --noconfirm --needed \
   stylelint \
   typescript \
   typescript-language-server \
+  bat \
+  exa \
   && sudo chsh --shell "$(which fish)" "$USER" \
   && git clone https://aur.archlinux.org/yay.git ~/git/aur.archlinux.org/yay \
   && cd ~/git/aur.archlinux.org/yay \
