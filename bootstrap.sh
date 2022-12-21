@@ -33,6 +33,7 @@ sudo pacman -Syyu --noconfirm --needed \
     nerd-fonts-jetbrains-mono \
     noto-fonts \
     noto-fonts-emoji \
+    php-codesniffer \
   && cd ~/.dotfiles \
   && stow ./*/ \
   && exec fish
