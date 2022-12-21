@@ -77,6 +77,11 @@ set wildignorecase
 let mapleader = " "
 
 " ale
+let g:ale_fixers = {
+      \  '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \ 'css': ['stylelint'],
+      \ 'html': ['htmlhint'],
+      \ }
 let g:ale_completion_enabled = 1
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
@@ -86,6 +91,7 @@ let g:ale_echo_msg_format = '%s'
 nnoremap <leader>an :ALENext<CR>
 nnoremap <leader>ap :ALEPrevious<CR>
 nnoremap <leader>ad :ALEDetail<CR>
+nnoremap <leader>af :ALEFix<CR>
 nnoremap <leader>agtd :ALEGoToDefinition<CR>
 nnoremap <leader>agtt :ALEGoToTypeDefinition<CR>
 nnoremap <leader>agti :ALEGoToImplementation<CR>
