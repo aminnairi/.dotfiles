@@ -148,3 +148,6 @@ hi ReactLifeCycleMethods ctermfg=204 guifg=#D19A66
 
 " PHP
 autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4
+
+" C
+autocmd FileType c setlocal tabstop=4 shiftwidth=4 softtabstop=4
