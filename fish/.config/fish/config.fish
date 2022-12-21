@@ -12,4 +12,10 @@ if status is-interactive
   if test ! -d ~/.local/share/omf
     curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
   end
+
+  # Alias for the cat command
+  alias cat="bat"
+
+  # Alias for the ls command
+  alias ls="exa"
 end
