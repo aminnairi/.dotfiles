@@ -80,7 +80,6 @@ let mapleader = " "
 let g:ale_fixers = {
       \  '*': ['remove_trailing_lines', 'trim_whitespace'],
       \ 'css': ['stylelint'],
-      \ 'html': ['htmlhint'],
       \ }
 let g:ale_completion_enabled = 1
 let g:ale_sign_error = '❌'
