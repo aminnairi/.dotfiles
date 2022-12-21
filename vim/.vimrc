@@ -104,6 +104,9 @@ nnoremap <leader>ar :ALERename<CR>
 nnoremap <leader>ai :ALEImport<CR>
 nnoremap <leader>afr :ALEFileRename<CR>
 
+let g:ale_floating_preview = 1
+let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰', '│', '─']
+
 " fzf.vim
 nnoremap <C-p> :FZF<CR>
 
