@@ -15,7 +15,7 @@ font:
   bold_italic:
     family: JetBrainsMono Nerd Font
     style: Bold Italic
-  size: 20.0
+  size: 16.0
 colors:
   primary:
     background: '#2e3440'
