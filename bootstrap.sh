@@ -22,6 +22,8 @@ sudo pacman -Syyu --noconfirm --needed \
   fzf \
   htmlhint \
   stylelint \
+  typescript \
+  typescript-language-server \
   && sudo chsh --shell "$(which fish)" "$USER" \
   && git clone https://aur.archlinux.org/yay.git ~/git/aur.archlinux.org/yay \
   && cd ~/git/aur.archlinux.org/yay \
