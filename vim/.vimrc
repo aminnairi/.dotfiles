@@ -21,8 +21,7 @@ call plug#begin()
   Plug 'elmcast/elm-vim'
   Plug 'preservim/nerdtree'
   Plug 'leafgarland/typescript-vim'
-  Plug 'ryanoasis/vim-devicons'
-  Plug 'peitalin/vim-jsx-typescript'
+  Plug 'ryanoasis/vim-devicons' Plug 'peitalin/vim-jsx-typescript'
   Plug 'jremmen/vim-ripgrep'
   Plug 'vimwiki/vimwiki'
   Plug 'posva/vim-vue'
@@ -138,3 +137,6 @@ hi ReduxKeywords ctermfg=204 guifg=#C678DD
 hi ReduxHooksKeywords ctermfg=204 guifg=#C176A7
 hi WebBrowser ctermfg=204 guifg=#56B6C2
 hi ReactLifeCycleMethods ctermfg=204 guifg=#D19A66
+
+" PHP
+autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4
