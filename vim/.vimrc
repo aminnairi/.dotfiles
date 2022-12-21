@@ -81,12 +81,16 @@ let g:ale_fixers = {
       \  '*': ['remove_trailing_lines', 'trim_whitespace'],
       \ 'css': ['stylelint'],
       \ }
+
 let g:ale_completion_enabled = 1
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_echo_msg_error_str = '❌'
 let g:ale_echo_msg_warning_str = ''
 let g:ale_echo_msg_format = '%s'
+
+let g:ale_php_phpcs_standard = "PSR12"
+
 nnoremap <leader>an :ALENext<CR>
 nnoremap <leader>ap :ALEPrevious<CR>
 nnoremap <leader>ad :ALEDetail<CR>
