@@ -216,6 +216,110 @@ module.exports = {
       }
     ],
     "no-extra-semi": "error",
+    "no-floating-decimal": "error",
+    "no-global-assign": "error",
+    "no-implicit-coercion": "error",
+    "no-implicit-globals": "error",
+    "no-implied-eval": "error",
+    "no-invalid-this": "error",
+    "no-iterator": "error",
+    "no-labels": "error",
+    "no-lone-blocks": "error",
+    "no-loop-func": "error",
+    "no-lonely-if": "error",
+    "no-multi-assign": "error",
+    "no-multi-str": "error",
+    "no-negated-condition": "error",
+    "no-new": "error",
+    "no-new-func": "error",
+    "no-new-object": "error",
+    "no-new-wrappers": "error",
+    "no-nonoctal-decimal-escape": "error",
+    "no-proto": "error",
+    "no-redeclare": "error",
+    "no-return-assign": [
+      "error",
+      "always"
+    ],
+    "no-return-await": "error",
+    "no-script-url": "error",
+    "no-sequences": "error",
+    "no-shadow-restricted-names": "error",
+    "no-throw-literal": "error",
+    "no-undefined": "error",
+    "no-unneeded-ternary": "error",
+    "no-unused-expressions": "error",
+    "no-useless-call": "error",
+    "no-useless-catch": "error",
+    "no-useless-concat": "error",
+    "no-useless-computed-key": "error",
+    "no-useless-constructor": "error",
+    "no-useless-escape": "error",
+    "no-useless-rename": "error",
+    "no-useless-return": "error",
+    "no-var": "error",
+    "no-void": "error",
+    "no-with": "error",
+    "object-shorthand": [
+      "error",
+      "always"
+    ],
+
+    "one-var": [
+      "error",
+      "always"
+    ],
+    "one-var-declaration-per-line": [
+      "error",
+      "always"
+    ],
+
+    "prefer-arrow-callback": [
+      "error",
+      {
+        allowNamedFunctions: false,
+        allowUnboundThis: false
+      }
+    ],
+    "prefer-const": [
+      "error",
+      {
+        destructuring: "any",
+        ignoreReadBeforeAssign: false
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        object: true,
+        array: false
+      }
+    ],
+    "prefer-exponentiation-operator": "error",
+    "prefer-numeric-literals": "error",
+    "prefer-object-has-own": "error",
+    "prefer-object-spread": "error",
+    "prefer-promise-reject-errors": [
+      "error",
+      {
+        allowEmptyReject: false
+      }
+    ],
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    "quote-props": [
+      "error",
+      "as-needed",
+    ],
+    "require-await": "error",
+    "require-unicode-regexp": "error",
+    "require-yield": "error",
+    "strict": [
+      "error",
+      "global"
+    ],
+    "symbol-description": "error",
     "react/jsx-indent": ["error", 2],
     "react/button-has-type": [
       "error",
