@@ -24,6 +24,8 @@ fi
 exit 0
 
 sudo pacman -Syyu --noconfirm --needed \
+  node \
+  npm \
   stow \
   alacritty \
   fish \
@@ -52,6 +54,8 @@ sudo pacman -Syyu --noconfirm --needed \
     noto-fonts \
     noto-fonts-emoji \
     php-codesniffer \
+  && cd "$HOME" \
+  && sudo npm install --save-exact --save-dev eslint-plugin-react@latest \
   && cd ~/.dotfiles \
   && stow ./*/ \
   && exec fish
