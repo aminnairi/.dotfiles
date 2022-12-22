@@ -3,7 +3,8 @@
 module.exports = {
   env: {
     browser: true,
-    node: true
+    node: true,
+    es2022: true
   },
   plugins: [
     "react"
