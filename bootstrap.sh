@@ -32,6 +32,7 @@ sudo pacman -Syyu --noconfirm --needed \
   typescript-language-server \
   bat \
   exa \
+  bpytop \
   && sudo chsh --shell "$(which fish)" "$USER" \
   && git clone https://aur.archlinux.org/yay.git ~/git/aur.archlinux.org/yay \
   && cd ~/git/aur.archlinux.org/yay \
