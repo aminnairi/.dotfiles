@@ -27,6 +27,9 @@ call plug#begin()
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'ryanoasis/vim-devicons'
   Plug 'preservim/nerdtree'
+  Plug 'elzr/vim-json'
+  Plug 'othree/html5.vim'
+  Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " Vim configuration
@@ -57,7 +60,6 @@ set lazyredraw
 set nolinebreak
 set nowrap
 set nofoldenable
-set matchpairs="(:),{:},[:],<:>"
 set number
 set relativenumber
 set nobackup
@@ -82,12 +84,16 @@ let g:ale_fixers = {
       \ 'css': ['stylelint'],
       \ }
 
+let g:ale_linters = {
+      \ 'html': ['htmlhint']
+      \ }
+
 let g:ale_completion_enabled = 1
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_echo_msg_error_str = '❌'
 let g:ale_echo_msg_warning_str = ''
-let g:ale_echo_msg_format = '%s'
+let g:ale_echo_msg_format = '[%linter%] %s'
 
 let g:ale_php_phpcs_standard = "PSR12"
 
