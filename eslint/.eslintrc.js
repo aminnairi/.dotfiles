@@ -3,10 +3,20 @@
 module.exports = {
   env: {
     browser: true,
-    node: true,
-    es2022: true
+    node: true
+  },
+  plugins: [
+    "react"
+  ],
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+    }
   },
   rules: {
+    indent: ["error", 2],
     "array-callback-return": [
       "error",
       {
@@ -24,7 +34,6 @@ module.exports = {
     ],
     "no-async-promise-executor": "error",
     "no-await-in-loop": "error",
-    "no-class-assign": "error",
     "no-compare-neg-zero": "error",
     "no-cond-assign": [
       "error",
@@ -42,7 +51,6 @@ module.exports = {
     "no-control-regex": "error",
     "no-debugger": "error",
     "no-dupe-args": "error",
-    "no-dupe-class-members": "error",
     "no-dupe-else-if": "error",
     "no-dupe-keys": "error",
     "no-duplicate-case": "error",
@@ -100,7 +108,6 @@ module.exports = {
         disallowArithmeticOperators: true
       }
     ],
-    "no-unused-private-class-members": "error",
     "no-unused-vars": [
       "error",
       {
@@ -129,6 +136,176 @@ module.exports = {
       {
         requireStringLiterals: true
       }
-    ]
+    ],
+    "react/jsx-indent": ["error", 2],
+    "react/button-has-type": [
+      "error",
+      {
+        button: true,
+        reset: true,
+        submit: true
+      }
+    ],
+    "react/destructuring-assignment": [
+      "error",
+      "always",
+      {
+        destructureInSignature: "always"
+      }
+    ],
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/hook-use-state": [
+      "error"
+    ],
+    "react/iframe-missing-sandbox": "error",
+    "react/jsx-boolean-value": [
+      "error",
+      "always"
+    ],
+    "react/jsx-child-element-spacing": "error",
+    "react/jsx-closing-bracket-location": [
+      "error",
+      "after-props"
+    ],
+    "react/jsx-closing-tag-location": "error",
+    "react/jsx-curly-brace-presence": [
+      "error",
+      "never"
+    ],
+    "react/jsx-curly-newline": [
+      "error",
+      "consistent"
+    ],
+    "react/jsx-curly-spacing": [
+      "error",
+      {
+        when: "never"
+      }
+    ],
+    "react/jsx-equals-spacing": [
+      "error",
+      "never"
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        extensions: [
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ],
+    "react/jsx-first-prop-new-line": [
+      "error",
+      "multiline-multiprop"
+    ],
+    "react/jsx-fragments": [
+      "error",
+      "element"
+    ],
+    "react/jsx-handler-names": [
+      "error",
+      {
+        eventHandlerPrefix: "on",
+        eventHandlerPropPrefix: "handle",
+        checkLocalVariables: true,
+        checkInlineFunction: true
+      }
+    ],
+    "react/jsx-indent-props": [
+      "error",
+      2
+    ],
+    "react/jsx-key": [
+      "error",
+      {
+        checkFragmentShorthand: true,
+        checkKeyMustBeforeSpread: true,
+        warnOnDuplicates: true
+      }
+    ],
+    "react/jsx-newline": [
+      "error",
+      {
+        prevent: true,
+        allowMultilines: false
+      }
+    ],
+    "react/jsx-no-bind": "error",
+    "react/jsx-no-comment-textnodes": "error",
+    "react/jsx-no-constructed-context-values": "error",
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-leaked-render": "error",
+    "react/jsx-no-script-url": "error",
+    "react/jsx-no-undef": [
+      "error",
+      {
+        allowGlobals: true
+      }
+    ],
+    "react/jsx-no-useless-fragment": [
+      "error",
+      {
+        allowExpressions: false
+      }
+    ],
+    "react/jsx-one-expression-per-line": "error",
+    "react/jsx-pascal-case": [
+      "error",
+      {
+        allowAllCaps: false,
+        allowNamespace: true,
+        allowLeadingUnderscore: false
+      }
+    ],
+    "react/jsx-props-no-multi-spaces": "error",
+    "react/jsx-props-no-spreading": "error",
+    "react/jsx-space-before-closing": [
+      "error",
+      "always"
+    ],
+    "react/jsx-tag-spacing": [
+      "error",
+      {
+        closingSlash: "never",
+        beforeSelfClosing: "always",
+        afterOpening: "never",
+        beforeClosing: "never"
+      }
+    ],
+    "react/jsx-uses-vars": "error",
+    "react/jsx-wrap-multilines": [
+      "error"
+    ],
+    "react/no-access-state-in-setstate": "error",
+    "react/no-array-index-key": "error",
+    "react/no-arrow-function-lifecycle": "error",
+    "react/no-children-prop": "error",
+    "react/no-danger": "error",
+    "react/no-danger-with-children": "error",
+    "react/no-deprecated": "error",
+    "react/no-find-dom-node": "error",
+    "react/no-invalid-html-attribute": "error",
+    "react/no-namespace": "error",
+    "react/no-render-return-value": "error",
+    "react/no-string-refs": "error",
+    "react/no-this-in-sfc": "error",
+    "react/no-typos": "error",
+    "react/no-unescaped-entities": "error",
+    "react/no-unknown-property": "error",
+    "react/no-unsafe": "error",
+    "react/no-unstable-nested-components": "error",
+    "react/prefer-exact-props": "error",
+    "react/prefer-read-only-props": "error",
+    "react/prefer-stateless-function": "error",
+    "react/self-closing-comp": "error",
+    "react/style-prop-object": "error",
+    "react/void-dom-elements-no-children": "error"
   }
 }
