@@ -255,7 +255,6 @@ module.exports = {
         allowExpressions: false
       }
     ],
-    "react/jsx-one-expression-per-line": "error",
     "react/jsx-pascal-case": [
       "error",
       {
