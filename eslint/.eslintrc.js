@@ -137,6 +137,85 @@ module.exports = {
         requireStringLiterals: true
       }
     ],
+    "accessor-pairs": [
+      "error",
+      {
+        setWithoutGet: true,
+        getWithoutSet: true,
+        enforceForClassMembers: true
+      }
+    ],
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "block-scoped-var": "error",
+    "class-methods-use-this": [
+      "error",
+      {
+        enforceForClassFields: true
+      }
+    ],
+    "consistent-return": [
+      "error",
+      {
+        treatUndefinedAsUnspecified: true
+      }
+    ],
+    "curly": [
+      "error",
+      "all"
+    ],
+    "default-case": "error",
+    "default-case-last": "error",
+    "default-param-last": "error",
+    "dot-notation": "error",
+    "dot-notation": [
+      "error",
+      {
+        allowKeywords: true
+      }
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    "func-style": [
+      "error",
+      "expression",
+      {
+        allowArrowFunctions: true
+      }
+    ],
+    "logical-assignment-operators": [
+      "error",
+      "always"
+    ],
+    "init-declarations": [
+      "error",
+      "always"
+    ],
+    "guard-for-in": "error",
+    "no-array-constructor": "error",
+    "no-caller": "error",
+    "no-case-declarations": "error",
+    "no-delete-var": "error",
+    "no-div-regex": "error",
+    "no-else-return": "error",
+    "no-empty": "error",
+    "no-empty-function": "error",
+    "no-empty-static-block": "error",
+    "no-eq-null": "error",
+    "no-eval": "error",
+    "no-extend-native": "error",
+    "no-extra-bind": "error",
+    "no-extra-boolean-cast": [
+      "error",
+      {
+        enforceForLogicalOperands: true
+      }
+    ],
+    "no-extra-semi": "error",
     "react/jsx-indent": ["error", 2],
     "react/button-has-type": [
       "error",
