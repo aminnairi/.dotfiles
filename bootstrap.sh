@@ -1,19 +1,27 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Did you read the documentation?
 # https://github.com/aminnairi/.dotfiles#readme
 
-if [ "$(id -u)" -eq 0 ]
+if [[ "$(id -u)" -eq 0 ]]
 then
   echo "This script should not be run as root, please try again with an unprivileged user."
   exit 1
 fi
 
-if "$(grep ID=arch /etc/os-release)" > /dev/null
+if [[ ! -x "$(which pacman 2> /dev/null)" ]]
 then
-  echo "This script should be run in an Arch distribution"
+  echo "This script should be run in an Arch distribution."
   exit 2
 fi
+
+if [[ ! -x "$(which sudo 2> /dev/null)" ]]
+then
+  echo "This script should be run in an Arch distribution with sudo installed, please install it before running this script again."
+  exit 3
+fi
+
+exit 0
 
 sudo pacman -Syyu --noconfirm --needed \
   stow \
