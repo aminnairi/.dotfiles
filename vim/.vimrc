@@ -19,14 +19,15 @@ call plug#begin()
   Plug 'dag/vim-fish'
   Plug 'styled-components/vim-styled-components'
   Plug 'elmcast/elm-vim'
-  Plug 'preservim/nerdtree'
   Plug 'leafgarland/typescript-vim'
-  Plug 'ryanoasis/vim-devicons'
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'jremmen/vim-ripgrep'
   Plug 'vimwiki/vimwiki'
   Plug 'posva/vim-vue'
   Plug 'tpope/vim-fugitive'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'preservim/nerdtree'
 call plug#end()
 
 " Vim configuration
