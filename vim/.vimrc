@@ -9,9 +9,6 @@ endif
 
 " Plugins to install
 call plug#begin()
-  Plug 'pangloss/vim-javascript'
-  Plug 'yuezk/vim-js'
-  Plug 'maxmellon/vim-jsx-pretty'
   Plug 'dense-analysis/ale'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
@@ -27,7 +24,6 @@ call plug#begin()
   Plug 'jremmen/vim-ripgrep'
   Plug 'vimwiki/vimwiki'
   Plug 'posva/vim-vue'
-  Plug 'tpope/vim-fugitive'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'ryanoasis/vim-devicons'
   Plug 'preservim/nerdtree'
