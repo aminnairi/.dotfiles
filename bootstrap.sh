@@ -21,10 +21,8 @@ then
   exit 3
 fi
 
-exit 0
-
 sudo pacman -Syyu --noconfirm --needed \
-  node \
+  nodejs \
   npm \
   stow \
   alacritty \
@@ -57,5 +55,5 @@ sudo pacman -Syyu --noconfirm --needed \
   && cd "$HOME" \
   && sudo npm install --save-exact --save-dev eslint-plugin-react@latest \
   && cd ~/.dotfiles \
-  && stow ./*/ \
+  && stow */ \
   && exec fish
