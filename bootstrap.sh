@@ -34,14 +34,9 @@ sudo pacman -Syyu --noconfirm --needed \
   noto-fonts \
   noto-fonts-emoji \
   fzf \
-  htmlhint \
-  stylelint \
-  typescript \
-  typescript-language-server \
   bat \
   exa \
   bpytop \
-  eslint \
   && sudo chsh --shell "$(which fish)" "$USER" \
   && git clone https://aur.archlinux.org/yay.git ~/git/aur.archlinux.org/yay \
   && cd ~/git/aur.archlinux.org/yay \
@@ -53,7 +48,15 @@ sudo pacman -Syyu --noconfirm --needed \
     noto-fonts-emoji \
     php-codesniffer \
   && cd "$HOME" \
-  && sudo npm install --save-exact --save-dev eslint-plugin-react@latest \
+  && sudo npm install --save-exact --save-dev \
+    eslint@latest \
+    eslint-plugin-react@latest \
+    @typescript-eslint/parser@latest \
+    @typescript-eslint/eslint-plugin@latest \
+    typescript@latest \
+    htmlhint@latest \
+    stylelint@latest \
+    typescript-language-server@latest \
   && cd ~/.dotfiles \
   && stow */ \
   && exec fish
