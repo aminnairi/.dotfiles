@@ -30,6 +30,7 @@ call plug#begin()
   Plug 'elzr/vim-json'
   Plug 'othree/html5.vim'
   Plug 'rust-lang/rust.vim'
+  Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
 " Vim configuration
