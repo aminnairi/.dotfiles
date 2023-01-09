@@ -38,6 +38,7 @@ sudo pacman -Syyu --noconfirm --needed \
   exa \
   bpytop \
   bash-language-server \
+  rust-analyzer \
   helix \
   && sudo chsh --shell "$(which fish)" "$USER" \
   && git clone https://aur.archlinux.org/yay.git ~/git/aur.archlinux.org/yay \
