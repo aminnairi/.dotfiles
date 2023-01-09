@@ -41,6 +41,11 @@ sudo pacman -Syyu --noconfirm --needed \
   bash-language-server \
   rust-analyzer \
   vscode-json-languageserver \
+  yaml-language-server \
+  vscode-css-languageserver \
+  vscode-html-languageserver \
+  elm-language-server \
+  nodejs-intelephense \
   && sudo chsh --shell "$(which fish)" "$USER" \
   && git clone https://aur.archlinux.org/yay.git ~/git/aur.archlinux.org/yay \
   && cd ~/git/aur.archlinux.org/yay \
