@@ -82,7 +82,7 @@ let mapleader = " "
 " ale
 let g:ale_fixers = {
       \  '*': ['remove_trailing_lines', 'trim_whitespace'],
-      \ 'css': ['stylelint'],
+      \ 'css': ['stylelint']
       \ }
 
 let g:ale_linters = {
@@ -158,3 +158,6 @@ autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " C
 autocmd FileType c setlocal tabstop=4 shiftwidth=4 softtabstop=4
+
+" Elm
+autocmd FileType elm setlocal tabstop=4 shiftwidth=4 softtabstop=4
