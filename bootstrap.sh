@@ -29,6 +29,7 @@ sudo pacman -Syyu --noconfirm --needed \
   fish \
   tmux \
   gvim \
+  elm-format \
   git \
   ripgrep \
   noto-fonts \
@@ -46,6 +47,7 @@ sudo pacman -Syyu --noconfirm --needed \
   vscode-html-languageserver \
   elm-language-server \
   nodejs-intelephense \
+  marksman \
   && sudo chsh --shell "$(which fish)" "$USER" \
   && git clone https://aur.archlinux.org/yay.git ~/git/aur.archlinux.org/yay \
   && cd ~/git/aur.archlinux.org/yay \
