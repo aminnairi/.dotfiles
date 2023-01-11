@@ -31,6 +31,7 @@ call plug#begin()
   Plug 'othree/html5.vim'
   Plug 'rust-lang/rust.vim'
   Plug 'liuchengxu/vim-which-key'
+  Plug 'alpertuna/vim-header'
 call plug#end()
 
 " Vim configuration
@@ -127,6 +128,17 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+" vim-header
+let g:header_field_author = 'Amin NAIRI'
+let g:header_field_author_email = ''
+let g:header_auto_add_header = 0
+let g:header_auto_update_header = 0
+let g:header_alignment = 1
+nnoremap <leader>hah :AddHeader<CR>
+nnoremap <leader>hamh :AddMinHeader<CR>
+nnoremap <leader>hagl :AddGNULicense<CR>
+
 
 " vim-airline
 let g:airline_powerline_fonts = 1
