@@ -83,7 +83,8 @@ let mapleader = " "
 " ale
 let g:ale_fixers = {
       \  '*': ['remove_trailing_lines', 'trim_whitespace'],
-      \ 'css': ['stylelint']
+      \ 'css': ['stylelint'],
+      \ 'rust': ['rustfmt']
       \ }
 
 let g:ale_linters = {

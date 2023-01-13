@@ -40,6 +40,7 @@ sudo pacman -Syyu --noconfirm --needed \
   bpytop \
   helix \
   bash-language-server \
+  rust \
   rust-analyzer \
   vscode-json-languageserver \
   yaml-language-server \
