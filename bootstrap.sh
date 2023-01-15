@@ -49,6 +49,7 @@ sudo pacman -Syyu --noconfirm --needed \
   elm-language-server \
   nodejs-intelephense \
   marksman \
+  emacs \
   && sudo chsh --shell "$(which fish)" "$USER" \
   && git clone https://aur.archlinux.org/yay.git ~/git/aur.archlinux.org/yay \
   && cd ~/git/aur.archlinux.org/yay \
