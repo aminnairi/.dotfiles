@@ -14,7 +14,17 @@
 ;; (set-face-attribute 'default nil :height 100 :family "JetBrainsMono Nerd Font")
 
 ;; Set the height of the mini buffer
-(set-frame-font "JetBrainsMono Nerd Font-12")
+(set-frame-font "JetBrainsMono Nerd Font-14")
+
+;; Automatically reload the file if some external program update the
+;; file currently opened in Emacs, and prompt before replacing the
+;; content if there are any unsaved change in the targetted buffer
+(global-auto-revert-mode 1)
+
+;; Automatically revert the Dired buffer when a file or a folder that
+;; Dired is currently on changes on the disk, making its content
+;; refreshed automatically
+(setq global-auto-revert-non-file-buffers t)
 
 ;; Package for handling web files (html, css, js, php, ...)
 (require 'web-mode)
