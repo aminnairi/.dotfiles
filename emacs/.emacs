@@ -10,6 +10,12 @@
 ;; Theme
 (load-theme 'spacemacs-light t)
 
+;; Disallow auto-save files
+(setq auto-save-default nil)
+
+;; Disallow creating backup files
+(setq make-backup-files nil)
+
 ;; Font size adjustment
 (add-to-list 'default-frame-alist '(font . "JetBrainsMono Nerd Font-12" ))
 (set-face-attribute 'default t :font "JetBrainsMono Nerd Font-12" )
