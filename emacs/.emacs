@@ -11,7 +11,10 @@
 (load-theme 'spacemacs-light t)
 
 ;; Font size adjustment
-(set-face-attribute 'default nil :height 100 :family "JetBrainsMono Nerd Font")
+;; (set-face-attribute 'default nil :height 100 :family "JetBrainsMono Nerd Font")
+
+;; Set the height of the mini buffer
+(set-frame-font "JetBrainsMono Nerd Font-12")
 
 ;; Package for handling web files (html, css, js, php, ...)
 (require 'web-mode)
