@@ -11,10 +11,8 @@
 (load-theme 'spacemacs-light t)
 
 ;; Font size adjustment
-;; (set-face-attribute 'default nil :height 100 :family "JetBrainsMono Nerd Font")
-
-;; Set the height of the mini buffer
-(set-frame-font "JetBrainsMono Nerd Font-14")
+(add-to-list 'default-frame-alist '(font . "JetBrainsMono Nerd Font-12" ))
+(set-face-attribute 'default t :font "JetBrainsMono Nerd Font-12" )
 
 ;; Automatically reload the file if some external program update the
 ;; file currently opened in Emacs, and prompt before replacing the
@@ -25,6 +23,12 @@
 ;; Dired is currently on changes on the disk, making its content
 ;; refreshed automatically
 (setq global-auto-revert-non-file-buffers t)
+
+;; Always create destination directories when copying files and folders
+(setq dired-create-destination-dirs 'always)
+
+;; Always kill the previous buffer when creating a new buffer
+(setq dired-kill-when-opening-new-dired-buffer t)
 
 ;; Package for handling web files (html, css, js, php, ...)
 (require 'web-mode)
@@ -79,3 +83,4 @@
  ;; If there is more than one, they won't work right.
  )
 
+(message "Configuration loaded")
