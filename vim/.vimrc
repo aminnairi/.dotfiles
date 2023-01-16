@@ -32,6 +32,7 @@ call plug#begin()
   Plug 'rust-lang/rust.vim'
   Plug 'liuchengxu/vim-which-key'
   Plug 'alpertuna/vim-header'
+  Plug 'tpope/vim-speeddating'
 call plug#end()
 
 " Vim configuration
