@@ -81,6 +81,15 @@ set wildignorecase
 " Remaping the <leader> key to <space>
 let mapleader = " "
 
+" Tab movement
+nnoremap <leader>tn :tabnext<CR>
+nnoremap <leader>tp :tabprevious<CR>
+nnoremap <leader>tc :tabclose<CR>
+
+" Buffer movement
+nnoremap <leader>bn :bnext<CR>
+nnoremap <leader>bp :bprevious<CR>
+
 " ale
 let g:ale_fixers = {
       \  '*': ['remove_trailing_lines', 'trim_whitespace'],
